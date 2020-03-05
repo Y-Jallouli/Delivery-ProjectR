@@ -1,0 +1,727 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,500,700&subset=latin-ext");
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+html, body {
+    overflow: visible;
+    overflow-x: hidden;
+}
+
+
+
+body{
+    width: 100%;
+    height: 100%;
+
+    background-size: cover;
+    background-color: aqua;
+    margin: 0;
+    padding: 0;
+}
+
+.lgnav{
+    z-index: 100;
+    position: fixed;
+    top: 5px;
+}
+
+.top{
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100%;
+    height: 100%;
+}
+
+.welcome-page{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/vv.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.menu-icon{
+    background-color: rgba(0, 0, 0, 0.397);
+    border-radius: 20%;
+}
+
+.about-us{
+    width: 100%;
+    height: 230vh;
+    background-image: linear-gradient( 109.2deg,  rgba(107,52,255,1) 16.5%, rgba(51,159,247,1) 81% );
+    position: relative;
+}
+
+.team-h{
+
+}
+
+.team-p{
+    color: rgb(255, 255, 255);
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.team-img{
+    width: 70%;
+    height: auto;
+}
+
+.welcome-txt{
+    position: absolute;
+    right: 20%;
+    top: 40%;
+    color: rgb(168, 124, 124);
+
+}
+
+.logo{
+    z-index: 20;
+    position: absolute;
+    top: 10px;
+    right: 5%;
+    border-radius: 100px;
+    
+}
+
+.aniamtion{
+    z-index: 5;
+}
+
+.why-us{
+    background-image: url(../img/cadre.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 145vh;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.adv{
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.card-bg{
+    width: 100%;
+}
+
+.mycard{
+    margin: 30px auto;
+    width: 170px;
+    height: 170px;
+    border-radius: 40px;
+    box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+    cursor: pointer;
+    transition: 0.4s;
+    position: absolute;
+    top: 0;
+    right: 50%;
+    transform: translate(50%);
+}
+
+.mycard:hover {
+    
+    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+      -5px -5px 30px 15px rgba(0,0,0,0.22);
+  }
+
+
+
+/* ----------- phone xs----------- */
+
+/* Portrait and Landscape */
+@media only screen  
+  and (max-device-width: 482px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+
+    .welcome-txt{
+        position: absolute;
+        right: 50%;
+        transform: translate(50%);
+        top: 9%;
+        color: rgb(255, 221, 221);
+    }
+    .title{
+        font-size: 55px;
+        margin-bottom: 20px;
+    }
+
+    .aniamtion{
+        z-index: 5;
+        position: absolute;
+        bottom: -20px;
+        right: 50%;
+        transform: translate(50%);
+        width: 350px;
+        height: 350px;
+    }
+    .welcome-p{
+        width: 100%;
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        font-family: 'Acme', sans-serif;
+    }
+    .first-line{
+        color: rgb(205, 255, 208);
+    }
+
+    .animated-btn{
+        position: absolute;
+        top: 40%;
+        right: 50%;
+        transform: translate(50%);
+    }
+
+/********************************about-us page*******************************/
+
+    .teamp-txt{
+        padding-top: 25px;
+    }
+
+    .team-h{
+        color: black;
+        font-size: 35px;
+    }
+
+    .team-p{
+        color: white;
+        font-size: 15px;
+        
+    }
+
+    .team-img{
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%);
+        width: 80%;
+        height: auto;
+    }
+
+    .profile-card{
+        width: 200px !important;
+        left: 1.5%;
+        
+    }
+    
+    .allcards{
+        position: absolute;
+        top: 8%;
+        
+    }
+
+    /**************************why us ************************************/
+       
+    .why-us-h{
+        margin: 0;
+        margin-bottom: 20px;
+        padding-top: 30px;
+        font-size: 35px;
+    }
+
+    .why-us-p{
+        font-family: 'Acme', sans-serif;
+        margin-top: 5px;
+
+    }
+
+
+}
+
+/* ----------- phone xs ----------- */
+
+/* ----------- tablet sm ----------- */
+
+
+@media (min-width: 400px) 
+ { 
+
+    .welcome-txt{
+        position: absolute;
+        right: 50%;
+        transform: translate(50%);
+        top: 10%;
+        color: rgb(255, 221, 221);
+    }
+    .title{
+        font-size: 55px;
+        margin-bottom: 20px;
+    }
+
+    .aniamtion{
+        position: absolute;
+        bottom: -20px;
+        right: 50%;
+        transform: translate(50%);
+        width: 350px;
+        height: 350px;
+    }
+    .welcome-p{
+        width: 100%;
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        font-family: 'Acme', sans-serif;
+    }
+    .first-line{
+        color: blanchedalmond;
+    }
+
+    .animated-btn{
+        position: absolute;
+        top: 30%;
+        right: 50%;
+        transform: translate(50%);
+    }
+
+    /********************************about-us page*******************************/
+
+    .about-us{
+        height: 280vh;
+    }
+
+    .teamp-txt{
+        padding-top: 25px;
+    }
+
+    .team-h{
+        color: black;
+        font-size: 35px;
+    }
+
+    .team-p{
+        color: white;
+        font-size: 15px;
+        
+    }
+
+    .team-img{
+        position: absolute;
+        top: 9%;
+        left: 50%;
+        transform: translate(-50%);
+        width: 80%;
+        max-width: 500px;
+        
+    }
+    
+    .allcards{
+        position: absolute;
+        top: 12%;
+    }
+
+    .allcards{
+        right: 50%;
+        transform: translate(50%);
+    }
+
+    /**************************why us ************************************/
+    
+    .why-us{
+        height: 180vh;
+    }
+
+    .why-us-h{
+        margin: 0;
+        margin-bottom: 20px;
+        padding-top: 30px;
+        font-size: 35px;
+    }
+
+    .why-us-p{
+        font-family: 'Acme', sans-serif;
+        margin-top: 5px;
+        
+    }
+
+    .adv{
+        position: relative;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .card-bg{
+        width: 100%;
+        max-width: 600px;
+    }
+    
+    .mycard{
+        margin: 30px auto;
+        width: 170px;
+        height: 170px;
+        border-radius: 40px;
+        box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+        cursor: pointer;
+        transition: 0.4s;
+        position: absolute;
+        top: 15%;
+        right: 50%;
+        transform: translate(50%);
+    }
+
+
+
+
+}
+
+@media (min-width: 500px){
+    .team-img{
+        top: 5%;
+        
+    }
+}
+
+/* ----------- tablet sm----------- */
+
+/* ----------- md ----------- */
+@media (min-width: 768px){ 
+
+    .welcome-txt{
+        position: absolute;
+        left: 20%;
+        transform: translate(-40%);
+        top: 35%;
+        color: rgb(12, 60, 92);
+    }
+    .title{
+        font-size: 65px;
+        margin-bottom: 20px;
+    }
+
+    .aniamtion{
+        position: absolute;
+        top: 35%;
+        right: 30%;
+        
+        width: 50%;
+    }
+    .welcome-p{
+        width: 100%;
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        font-family: 'Acme', sans-serif;
+    }
+    .first-line{
+        color: rgb(255, 0, 0);
+    }
+
+    .animated-btn{
+        position: absolute;
+        top: 38%;
+        right: 50%;
+        transform: translate(50%);
+    }
+
+    /********************************about-us page*******************************/
+
+    .about-us{
+        width: 100%;
+        height: 280vh;
+        background-image: linear-gradient( 109.2deg,  rgba(107,52,255,1) 16.5%, rgba(51,159,247,1) 81% );
+        position: relative;
+    }
+
+    .teamp-txt{
+        padding-top: 25px;
+    }
+
+    .team-h{
+        color: black;
+        font-size: 40px;
+    }
+
+    .team-p{
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .team-img{
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%);
+        width: 80%;
+        height: auto;
+    }
+    
+    .allcards{
+        position: absolute;
+        top: 25%;
+        right: 50%;
+        transform: translate(50%);
+    }
+
+    .space{
+        display: block;
+        width: 40px;
+    }
+
+    .wrapper{
+        display: flex;
+        
+    }
+
+        /**************************why us ************************************/
+    
+        .why-us{
+            height: 180vh;
+        }
+    
+        .why-us-h{
+            margin: 0;
+            margin-bottom: 20px;
+            padding-top: 30px;
+            font-size: 35px;
+            
+        }
+    
+        .why-us-p{
+            font-family: 'Acme', sans-serif;
+            margin-top: 5px;
+            
+        }
+    
+        .adv{
+            position: relative;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+    
+        .card-bg{
+            width: 100%;
+            max-width: 600px;
+        }
+        
+        .mycard{
+            margin: 30px auto;
+            width: 170px;
+            height: 170px;
+            border-radius: 40px;
+            box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+            cursor: pointer;
+            transition: 0.4s;
+            position: absolute;
+            top: 15%;
+            right: 50%;
+            transform: translate(50%);
+        }
+
+
+}
+
+/* ----------- md----------- */
+
+/* ----------- lg ----------- */
+
+@media (min-width: 992px) { 
+
+    .welcome-txt{
+        position: absolute;
+        left: 15%;
+        transform: translate(-40%);
+        top: 35%;
+        color: rgb(12, 60, 92);
+    }
+    .title{
+        font-size: 65px;
+        margin-bottom: 20px;
+    }
+
+    .aniamtion{
+        position: absolute;
+        top: 20%;
+        right: 25%;
+        
+        width: 45%;
+    }
+    .welcome-p{
+        width: 100%;
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        font-family: 'Acme', sans-serif;
+    }
+    .first-line{
+        color: rgb(95, 89, 89);
+    }
+
+    .animated-btn{
+        position: absolute;
+        top: 32%;
+        right: 50%;
+        transform: translate(50%);
+    }
+
+    /********************************about-us page*******************************/
+
+    .about-us{
+        width: 100%;
+        height: 280vh;
+        background-image: linear-gradient( 109.2deg,  rgba(107,52,255,1) 16.5%, rgba(51,159,247,1) 81% );
+        position: relative;
+    }
+
+    .teamp-txt{
+        padding-top: 25px;
+    }
+
+    .team-h{
+        color: black;
+        font-size: 40px;
+    }
+
+    .team-p{
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 60%;
+        position: absolute;
+        right: 50%;
+        transform: translate(50%);
+    }
+
+    .team-img{
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%);
+        width: 80%;
+        height: auto;
+    }
+    
+    .allcards{
+        position: absolute;
+        top: 25%;
+        right: 50%;
+        transform: translate(50%);
+    }
+
+    .space{
+        display: block;
+        width: 40px;
+    }
+
+    .wrapper{
+        display: flex;
+        
+    }
+
+
+           /**************************why us ************************************/
+    
+           .why-us{
+            height: 80vh;
+        }
+    
+        .why-us-h{
+            margin: 0;
+            margin-bottom: 40px;
+            padding-top: 30px;
+            font-size: 50px;
+            color: rgb(0, 0, 0);
+        }
+    
+        .why-us-p{
+            font-family: 'Acme', sans-serif;
+            margin-top: 5px;
+            
+        }
+        .alladv{
+            display: flex;
+        }
+    
+        .adv{
+            position: relative;
+            width: 100%;
+            margin-bottom: 30px;
+            
+        }
+    
+        .card-bg{
+            width: 100%;
+            max-width: 600px;
+        }
+        
+        .mycard{
+            margin: 30px auto;
+            width: 170px;
+            height: 170px;
+            border-radius: 40px;
+            box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+            cursor: pointer;
+            transition: 0.4s;
+            position: absolute;
+            top: 15%;
+            right: 50%;
+            transform: translate(50%);
+        }
+
+    
+
+
+}
+
+/* ----------- lg----------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.welcome-page{
+    max-height: 100vh;
+    overflow: hidden;
+    width: 100%;
+    display: block;
+}
+img{
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-height: 100vh;
+    width: 100%;
+}
+
+.welcome-page-content{
+    width: 100%;
+    height: auto;
+    left: 0;
+    top: 100px;
+    position: absolute;
+    z-index: 10;
+}
+
+.about-us{
+    height: 100vh;
+    width: 100% !important;
+    background-color: black;
+}
+
+.top
+{
+    position: relative;
+    display: block;
+}
+
+
+
+*/
