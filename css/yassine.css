@@ -1,7 +1,6 @@
 .posPage{
     width: 100%;
     height: 100vh;
-    border: 3px solid black;
     background-image: url(../img/hey.jpg);
     background-repeat: no-repeat;
     background-position: bottom;
